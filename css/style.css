@@ -901,6 +901,7 @@ header nav .navBtn.active span:last-child {
 }
 .ourServices .services .singleService {
   flex: 1 22%;
+  min-width: 150px;
   background-color: var(--mainColor30);
   padding: 48px 12px;
   border-radius: 16px;
