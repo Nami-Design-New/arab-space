@@ -90,10 +90,10 @@ $(document).ready(function () {
     //   rows: 2,
     // },
     speed: 1000,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".ourInvestorsSliderNext",
       prevEl: ".ourInvestorsSliderPrev",
@@ -136,11 +136,7 @@ $(document).ready(function () {
       $(this).html(countNumber);
     });
   });
-  // select2
-  $(".select2search").select2();
-  $(".select2").select2({
-    minimumResultsForSearch: -1,
-  });
+
   //aos Delay
   $("section").each(function () {
     const sectionDivs = $(this).find("[data-aos]");
