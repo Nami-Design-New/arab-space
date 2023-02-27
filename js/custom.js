@@ -81,6 +81,35 @@ $(document).ready(function () {
       },
     },
   });
+  //ourInvestorsSlider
+  var ourInvestorsSlider = new Swiper(".ourInvestorsSlider", {
+    spaceBetween: 32,
+    // loop: true,
+    // effect: "fade",
+    // grid: {
+    //   rows: 2,
+    // },
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".ourInvestorsSliderNext",
+      prevEl: ".ourInvestorsSliderPrev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
 
 
 });

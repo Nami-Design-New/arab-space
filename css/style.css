@@ -1405,6 +1405,112 @@ footer .footer .col .social a:hover path {
   }
 }
 
+.investmentBanner {
+  padding: 100px 30px;
+  border-radius: 40px;
+  background-color: #1b1b2c;
+  width: min(100% - 48px, 1200px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  margin-top: 100px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .investmentBanner {
+    padding: 50px 20px;
+    margin-top: 50px;
+  }
+}
+.investmentBanner .title {
+  font-weight: bold;
+  font-size: 30px;
+  width: min(100% - 48px, 600px);
+  line-height: 50px;
+}
+@media (max-width: 768px) {
+  .investmentBanner .title {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+.ourInvestors {
+  width: min(100% - 48px, 1200px);
+  margin: auto;
+}
+.ourInvestors .top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.ourInvestors .top .title {
+  font-weight: bold;
+  font-size: 30px;
+  flex: 1 300px;
+}
+@media (max-width: 768px) {
+  .ourInvestors .top .title {
+    font-size: 24px;
+  }
+}
+.ourInvestors .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.ourInvestors .investor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.ourInvestors .investor .img {
+  width: 96px;
+  height: 96px;
+  border-radius: 100px;
+  background-color: var(--whiteColor);
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+.ourInvestors .investor .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.ourInvestors .investor .name {
+  background-color: var(--mainColor30);
+  padding: 24px;
+  flex: 1;
+  margin-left: -30px;
+  padding-left: 48px;
+  border-radius: 16px;
+}
+.ourInvestors .investor .name h4 {
+  font-weight: bold;
+}
+
+.investmentTitle {
+  font-weight: bold;
+  font-size: 40px;
+  width: min(100% - 48px, 600px);
+  line-height: 50px;
+  margin: auto;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .investmentTitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
 /* PC device :992px. */
 @media (min-width: 992px) {
   body {
