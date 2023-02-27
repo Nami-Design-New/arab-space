@@ -1437,6 +1437,46 @@ footer .footer .col .social a:hover path {
   }
 }
 
+.investmentCounters {
+  background-color: #28283C;
+  padding: 150px 0;
+}
+.investmentCounters .inner {
+  width: min(100% - 48px, 1200px);
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.investmentCounters .inner .col {
+  flex: 1 30%;
+  min-width: 150px;
+  text-align: center;
+}
+.investmentCounters .inner .col .countDiv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.investmentCounters .inner .col .countDiv span,
+.investmentCounters .inner .col .countDiv h2 {
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--whiteColor);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .investmentCounters .inner .col .countDiv span,
+  .investmentCounters .inner .col .countDiv h2 {
+    font-size: 30px;
+  }
+}
+.investmentCounters .inner .col p {
+  margin-top: 20px;
+}
+
 .ourInvestors {
   width: min(100% - 48px, 1200px);
   margin: auto;
@@ -1528,7 +1568,6 @@ footer .footer .col .social a:hover path {
 @media (max-width: 668px) {
   .aboutUs .row {
     text-align: center;
-    padding: 40px 0;
   }
 }
 .aboutUs .row .col {

@@ -150,6 +150,6 @@ $(document).ready(function () {
     delay: 50,
     duration: 700,
     // easing: "linear",
-    once: false,
+    once: true,
   });
 });

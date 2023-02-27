@@ -1297,6 +1297,43 @@ footer {
     }
   }
 }
+.investmentCounters{
+  background-color: #28283C;
+  padding: 150px 0;
+  .inner{
+    width: min(100% - 48px, 1200px);
+    margin: auto;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    .col{
+      flex: 1 30%;
+      min-width: 150px;
+      text-align: center;
+      .countDiv{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+        span ,
+        h2{
+          font-weight: bold;
+          font-size: 50px;
+          color: var(--whiteColor);
+          text-transform: uppercase;
+          white-space: nowrap;
+          @media (max-width: 768px) {
+            font-size: 30px;
+
+          }
+        }
+      }
+      p{
+        margin-top: 20px;
+      }
+    }
+  }
+}
 .ourInvestors {
   width: min(100% - 48px, 1200px);
   margin: auto;
@@ -1387,7 +1424,6 @@ footer {
     flex-wrap: wrap;
     @media (max-width: 668px) {
       text-align: center;
-      padding: 40px 0;
 
     }
     .col {
