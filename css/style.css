@@ -499,7 +499,7 @@ header nav .navMenu .navLink.active, header nav .navMenu .navLink:hover {
   header nav .navMenu {
     position: fixed;
     z-index: -1;
-    right: -100%;
+    left: -100%;
     top: 0px;
     width: 100%;
     height: 100vh;
@@ -515,7 +515,7 @@ header nav .navMenu .navLink.active, header nav .navMenu .navLink:hover {
   }
 }
 header nav .navMenu.active {
-  right: 0;
+  left: 0;
 }
 header nav .navBtn {
   margin: auto 0;
@@ -900,20 +900,34 @@ header nav .navBtn.active span:last-child {
   gap: 16px;
 }
 .ourServices .services .singleService {
-  flex: 1 150px;
+  flex: 1 22%;
   background-color: var(--mainColor30);
   padding: 48px 12px;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  isolation: isolate;
+}
+.ourServices .services .singleService::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 0%;
+  background-color: var(--mainColor);
   transition: var(--transition);
+  border-radius: 16px;
+  z-index: -1;
 }
 .ourServices .services .singleService h4 {
   font-weight: bold;
 }
-.ourServices .services .singleService:hover {
-  background-color: var(--mainColor);
+.ourServices .services .singleService:hover::before {
+  height: 100%;
 }
 
 .feedback {
@@ -1317,6 +1331,76 @@ footer .footer .col .social a:hover path {
 @media (max-width: 768px) {
   .downloadApp .download img {
     height: 40px;
+  }
+}
+
+.mainMarketing {
+  width: min(100% - 48px, 1200px);
+  margin: auto;
+  display: flex;
+  gap: 72px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 72px;
+}
+@media (max-width: 768px) {
+  .mainMarketing {
+    padding-top: 24px;
+    gap: 24px;
+    flex-direction: column-reverse;
+  }
+}
+.mainMarketing .col.info {
+  flex: 4 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 768px) {
+  .mainMarketing .col.info {
+    text-align: center;
+    align-items: center;
+  }
+}
+.mainMarketing .col.info .title {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  .mainMarketing .col.info .title {
+    font-size: 30px;
+  }
+}
+.mainMarketing .col.info p {
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 768px) {
+  .mainMarketing .col.info p {
+    margin-top: 20px;
+  }
+}
+.mainMarketing .col.img {
+  display: flex;
+  flex: 3 300px;
+  justify-content: end;
+}
+@media (max-width: 768px) {
+  .mainMarketing .col.img {
+    justify-content: center;
+  }
+}
+.mainMarketing .col.img img {
+  background-color: #28283c;
+  height: 500px;
+  aspect-ratio: 8/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 72px;
+}
+@media (max-width: 768px) {
+  .mainMarketing .col.img img {
+    height: 350px;
   }
 }
 
