@@ -1511,6 +1511,68 @@ footer .footer .col .social a:hover path {
   }
 }
 
+.aboutUs {
+  width: min(100% - 48px, 1000px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUs .row {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+@media (max-width: 668px) {
+  .aboutUs .row {
+    text-align: center;
+    padding: 40px 0;
+  }
+}
+.aboutUs .row .col {
+  flex: 1 300px;
+}
+.aboutUs .row .col.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.aboutUs .row .col.info .title {
+  font-weight: bold;
+  font-size: 36px;
+}
+@media (max-width: 768px) {
+  .aboutUs .row .col.info .title {
+    font-size: 24px;
+  }
+}
+.aboutUs .row .col.info .des {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+.aboutUs .row .col.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUs .row .col.img img {
+  height: 500px;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+@media (max-width: 768px) {
+  .aboutUs .row .col.img img {
+    height: 300px;
+  }
+}
+.aboutUs .row:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
 /* PC device :992px. */
 @media (min-width: 992px) {
   body {
