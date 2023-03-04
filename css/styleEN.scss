@@ -16,18 +16,18 @@
   --headerBackgroundColor: var(--whiteColor);
 }
 @font-face {
-  font-family: IBMPlexSansArabic;
+  font-family: BAHNSCHRIFT;
   font-display: swap;
-  src: url(../webfonts/IBMPlexSansArabic-Regular.ttf);
+  src: url(../webfonts/BAHNSCHRIFT.ttf);
 }
 * {
-  font-family: "IBMPlexSansArabic", Sans-serif;
+  font-family: "BAHNSCHRIFT", Sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   outline: none;
   scroll-behavior: smooth;
-  direction: rtl;
+  direction: ltr;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -141,7 +141,7 @@ input {
 [type="number"],
 [type="tel"],
 [type="url"] {
-  direction: rtl;
+  direction: ltr;
 }
 .swiperContainer {
   position: relative;
@@ -162,12 +162,11 @@ input {
     padding: 16px 0;
     .swiperNext,
     .swiperPrev {
-      transform: scaleX(-1);
       position: relative;
       top: unset;
       bottom: unset;
-      right: unset;
       left: unset;
+      right: unset;
       min-width: 40px;
       height: 40px;
       cursor: pointer;
@@ -207,7 +206,7 @@ input {
     }
     .swiper-scrollbar.swiper-scrollbar-horizontal {
       position: relative;
-      right: unset;
+      left: unset;
       bottom: unset;
       z-index: unset;
       height: 10px;
@@ -237,7 +236,7 @@ input {
   }
   .swiper-pagination {
     width: auto !important;
-    left: 50% !important;
+    right: 50% !important;
     transform: translateX(-50%);
     background-color: transparent;
     border-radius: 2px;
@@ -274,8 +273,8 @@ input {
 .select2-container--default
   .select2-selection--single
   .select2-selection__arrow {
-  right: 1px;
-  left: unset;
+  left: 1px;
+  right: unset;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -306,7 +305,7 @@ span.select2.select2-container.select2-container--default {
 .fancybox__track,
 .fancybox__content,
 .carousel__track {
-  direction: rtl !important;
+  direction: ltr !important;
 }
 .fancybox__caption {
   text-align: center;
@@ -315,7 +314,7 @@ span.select2.select2-container.select2-container--default {
   display: none !important;
 }
 .filepond--image-clip {
-  direction: rtl !important;
+  direction: ltr !important;
 }
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -404,7 +403,7 @@ textarea.inputForm {
 header {
   position: sticky;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   z-index: 1024;
   transition: var(--transition);
@@ -454,7 +453,7 @@ header {
       @media (max-width: 992px) {
         position: fixed;
         z-index: -1;
-        right: -100%;
+        left: -100%;
         top: 0px;
         width: 100%;
         height: 100vh;
@@ -469,7 +468,7 @@ header {
         }
       }
       &.active {
-        right: 0;
+        left: 0;
       }
     }
     .navBtn {
@@ -483,7 +482,7 @@ header {
       z-index: 2;
       span {
         position: absolute;
-        right: 0;
+        left: 0;
         display: block;
         width: 24px;
         height: 2px;
@@ -831,7 +830,7 @@ header {
         content: "";
         position: absolute;
         top: 0%;
-        right: 50%;
+        left: 50%;
         transform: translateX(-50%);
         width: 100%;
         height: 0%;
@@ -946,11 +945,11 @@ header {
       padding: 24px;
       background-color: rgb(27, 27, 44, 0.5);
       border: 1px solid rgba(158, 158, 158, 0.2);
-      padding-left: 124px;
+      padding-right: 124px;
     }
     .btn {
       position: absolute;
-      left: 12px;
+      right: 12px;
       top: 50%;
       transform: translateY(-50%);
       background-color: var(--mainColor);
@@ -1080,8 +1079,8 @@ footer {
         .frame {
           position: absolute;
           top: 50%;
-          right: 50%;
-          transform: translate(50%, -50%);
+          left: 50%;
+          transform: translate(-50%, -50%);
           height: 500px;
           width: 250px;
           object-fit: contain;
@@ -1304,7 +1303,7 @@ footer {
     width: 100%;
     height: 100%;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     z-index: -1;
     object-fit: cover;
@@ -1322,7 +1321,7 @@ footer {
     width: 100%;
     height: 100%;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     z-index: -1;
     object-fit: cover;
@@ -1417,8 +1416,8 @@ footer {
       background-color: var(--mainColor30);
       padding: 24px;
       flex: 1;
-      margin-right: -30px;
-      padding-right: 48px;
+      margin-left: -30px;
+      padding-left: 48px;
       border-radius: 16px;
       h4 {
         font-weight: bold;
