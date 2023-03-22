@@ -407,7 +407,7 @@ header {
   right: 0;
   width: 100%;
   z-index: 1024;
-  transition: var(--transition);
+  transition: background .3s ease-in-out;
   background-color: transparent;
   @media (max-width: 576px) {
     background-color: var(--secondColor);
@@ -1438,7 +1438,6 @@ footer {
     line-height: 40px;
   }
 }
-
 .aboutUs {
   width: min(100% - 48px, 1000px);
   margin: auto;
@@ -1492,6 +1491,113 @@ footer {
     }
     &:nth-child(2n) {
       flex-direction: row-reverse;
+    }
+  }
+}
+.ourTeam {
+  .info {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: min(100% - 48px, 1000px);
+    margin: auto;
+    text-align: center;
+    .title {
+      font-weight: bold;
+      font-size: 42px;
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+    .des {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      font-size: 24px;
+    }
+  }
+  .Co-Founder {
+    display: flex;
+    @media (max-width:768px) {
+      flex-direction: column;
+    }
+    .image {
+      // min-height: 200px;
+      flex: 1;
+      img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-height: 300px;
+
+      }
+    }
+    .data {
+      min-height: 200px;
+      background-color: #a377aa59;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      
+      .name {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .team{
+    display: flex;
+    flex-wrap: wrap;
+    .member {
+      flex: 0 50%;
+      display: flex;
+      flex-direction: row-reverse;
+
+      &:nth-child(  4n+3 ){
+        flex-direction: row;
+      }
+      &:nth-child(  4n+4 ){
+        flex-direction: row;
+      }
+    
+      
+      .image {
+        flex: 1;
+        img {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          height: 250px;
+        }
+      }
+      .data {
+        min-height: 200px;
+        background-color: #84519829;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        
+        .name {
+          font-weight: bold;
+        }
+      }
+      @media (max-width:768px) {
+        flex-direction: column !important;
+        padding: 4px;
+        .image {
+          img {
+            height: 180px;
+          }
+        }
+      }
     }
   }
 }

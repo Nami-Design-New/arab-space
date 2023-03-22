@@ -444,7 +444,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1024;
-  transition: var(--transition);
+  transition: background 0.3s ease-in-out;
   background-color: transparent;
 }
 @media (max-width: 576px) {
@@ -1452,7 +1452,7 @@ footer .footer .col .social a:hover path {
 }
 
 .investmentCounters {
-  background-color: #28283C;
+  background-color: #28283c;
   padding: 150px 0;
   position: relative;
   isolation: isolate;
@@ -1636,6 +1636,110 @@ footer .footer .col .social a:hover path {
 }
 .aboutUs .row:nth-child(2n) {
   flex-direction: row-reverse;
+}
+
+.ourTeam .info {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: min(100% - 48px, 1000px);
+  margin: auto;
+  text-align: center;
+}
+.ourTeam .info .title {
+  font-weight: bold;
+  font-size: 42px;
+}
+@media (max-width: 768px) {
+  .ourTeam .info .title {
+    font-size: 28px;
+  }
+}
+.ourTeam .info .des {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-size: 24px;
+}
+.ourTeam .Co-Founder {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .ourTeam .Co-Founder {
+    flex-direction: column;
+  }
+}
+.ourTeam .Co-Founder .image {
+  flex: 1;
+}
+.ourTeam .Co-Founder .image img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 300px;
+}
+.ourTeam .Co-Founder .data {
+  min-height: 200px;
+  background-color: rgba(163, 119, 170, 0.3490196078);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.ourTeam .Co-Founder .data .name {
+  font-weight: bold;
+}
+.ourTeam .team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ourTeam .team .member {
+  flex: 0 50%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.ourTeam .team .member:nth-child(4n+3) {
+  flex-direction: row;
+}
+.ourTeam .team .member:nth-child(4n+4) {
+  flex-direction: row;
+}
+.ourTeam .team .member .image {
+  flex: 1;
+}
+.ourTeam .team .member .image img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+}
+.ourTeam .team .member .data {
+  min-height: 200px;
+  background-color: rgba(132, 81, 152, 0.1607843137);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.ourTeam .team .member .data .name {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .ourTeam .team .member {
+    flex-direction: column !important;
+    padding: 4px;
+  }
+  .ourTeam .team .member .image img {
+    height: 180px;
+  }
 }
 
 /* PC device :992px. */
