@@ -1534,6 +1534,10 @@ footer {
       
       .name {
         font-weight: bold;
+        padding: 0 16px;
+      }
+      .job{
+        padding: 0 16px;
       }
     }
   }
@@ -1552,8 +1556,7 @@ footer {
       &:nth-child(  4n+4 ){
         flex-direction: row;
       }
-    
-      
+     
       .image {
         flex: 1;
         img {
@@ -1576,6 +1579,10 @@ footer {
         
         .name {
           font-weight: bold;
+          padding: 0 16px;
+        }
+        .job{
+          padding: 0 16px;
         }
       }
       @media (max-width:768px) {
@@ -1583,10 +1590,11 @@ footer {
         padding: 4px;
         .image {
           img {
-            height: 180px;
+            height: 200px;
           }
         }
       }
+      
     }
   }
 }

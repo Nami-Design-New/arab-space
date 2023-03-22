@@ -1692,6 +1692,10 @@ footer .footer .col .social a:hover path {
 }
 .ourTeam .Co-Founder .data .name {
   font-weight: bold;
+  padding: 0 16px;
+}
+.ourTeam .Co-Founder .data .job {
+  padding: 0 16px;
 }
 .ourTeam .team {
   display: flex;
@@ -1731,6 +1735,10 @@ footer .footer .col .social a:hover path {
 }
 .ourTeam .team .member .data .name {
   font-weight: bold;
+  padding: 0 16px;
+}
+.ourTeam .team .member .data .job {
+  padding: 0 16px;
 }
 @media (max-width: 768px) {
   .ourTeam .team .member {
@@ -1738,7 +1746,7 @@ footer .footer .col .social a:hover path {
     padding: 4px;
   }
   .ourTeam .team .member .image img {
-    height: 180px;
+    height: 200px;
   }
 }
 
