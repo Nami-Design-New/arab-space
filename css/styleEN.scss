@@ -1650,6 +1650,7 @@ footer {
   .packages {
     margin-top: -50px;
     padding: 0 10px;
+    overflow: hidden;
     .inner {
       width: min(100% - 48px, 1200px);
       margin: auto;

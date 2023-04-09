@@ -1813,6 +1813,7 @@ footer .footer .col .social a:hover path {
 .pricingPage .packages {
   margin-top: -50px;
   padding: 0 10px;
+  overflow: hidden;
 }
 .pricingPage .packages .inner {
   width: min(100% - 48px, 1200px);
