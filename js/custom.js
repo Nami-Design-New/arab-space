@@ -110,8 +110,58 @@ $(document).ready(function () {
       },
     },
   });
-
-
+  //packageSlider
+  var packageSlider = new Swiper(".packageSlider", {
+    spaceBetween: 24,
+    speed: 1000,
+    scrollbar: {
+      el: ".package-scrollbar",
+      dragSize: 70,
+      draggable: true,
+      hide: false,
+    },
+    navigation: {
+      nextEl: ".packageSliderNext",
+      prevEl: ".packageSliderPrev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  });
+  //companiesSlider
+  var companiesSlider = new Swiper(".companiesSlider", {
+    spaceBetween: 10,
+    // loop: true,
+    // effect: "fade",
+    speed: 1000,
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
+    scrollbar: {
+      el: ".companies-scrollbar",
+      dragSize: 70,
+      draggable: true,
+      hide: false,
+    },
+    navigation: {
+      nextEl: ".companiesSliderNext",
+      prevEl: ".companiesSliderPrev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+    },
+  });
 });
 // ////////////////////////////////////////
 // ////////////////////////////////////////
@@ -136,7 +186,6 @@ $(document).ready(function () {
       $(this).html(countNumber);
     });
   });
-
   //aos Delay
   $("section").each(function () {
     const sectionDivs = $(this).find("[data-aos]");
