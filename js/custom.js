@@ -162,6 +162,21 @@ $(document).ready(function () {
       },
     },
   });
+  // modal
+  const modal = $(".modal");
+  const btnOpenModal = $(".modalBtn");
+  const closeModal = $(".closeModal");
+  btnOpenModal.click(function () {
+    modal.addClass("showModal");
+  });
+  closeModal.click(function () {
+    modal.removeClass("showModal");
+  });
+  $(window).click(function (event) {
+    if (event.target == modal[0]) {
+      modal.removeClass("showModal");
+    }
+  });
 });
 // ////////////////////////////////////////
 // ////////////////////////////////////////

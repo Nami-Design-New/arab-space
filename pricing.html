@@ -500,24 +500,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <!-- custom -->
   <script src="js/custom.js"></script>
-  <script>
-    $(document).ready(function () {
-      const modal = $(".modal");
-      const btnOpenModal = $(".modalBtn");
-      const closeModal = $(".closeModal");
-      btnOpenModal.click(function () {
-        modal.fadeIn();
-      });
-      closeModal.click(function () {
-        modal.fadeOut();
-      });
-      $(window).click(function (event) {
-        if (event.target == modal[0]) {
-          modal.fadeOut();
-        }
-      });
-    });
-  </script>
+
 </body>
 
 </html>
