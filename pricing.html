@@ -85,7 +85,7 @@
                     <div class="packTop">
                       <h1 class="name gold"> Gold package </h1>
                       <h2 class="price"> 7000 <span> SAR </span> </h2>
-                      <button> Sign up </button>
+                      <button class="modalBtn"> Sign up </button>
                     </div>
                     <h3 class="include"> Include</h3>
                     <div class="packData">
@@ -109,7 +109,7 @@
                     <div class="packTop">
                       <h1 class="name silver"> Silver package </h1>
                       <h2 class="price"> 5000 <span> SAR </span> </h2>
-                      <button> Sign up </button>
+                      <button class="modalBtn"> Sign up </button>
                     </div>
                     <h3 class="include"> Include</h3>
                     <div class="packData">
@@ -130,7 +130,7 @@
                     <div class="packTop">
                       <h1 class="name bronze"> Bronze package </h1>
                       <h2 class="price"> 3000 <span> SAR </span> </h2>
-                      <button> Sign up </button>
+                      <button class="modalBtn"> Sign up </button>
                     </div>
                     <h3 class="include"> Include</h3>
                     <div class="packData">
@@ -240,6 +240,32 @@
           </span>
         </div>
       </section>
+      <!-- modal -->
+      <div class="modal">
+        <div class="modalContent">
+          <div class="modalHeader">
+            <h4> Gold package </h4>
+            <span class="closeModal">&times;</span>
+          </div>
+          <div class="modalBody">
+            <form action="">
+              <div class="inputGroup">
+                <label for="name"> Full Name </label>
+                <input id="name" type="text" placeholder="  exmple: Mohamed Salah ">
+              </div>
+              <div class="inputGroup">
+                <label for="email"> Email </label>
+                <input id="email" type="email" placeholder=" exmple: email@email.com ">
+              </div>
+              <div class="inputGroup">
+                <label for="whatsapp"> Whatsapp Number </label>
+                <input id="whatsapp" type="number" placeholder=" 00000000 ">
+              </div>
+              <button class=" btn" type="submit"> send </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </content>
   <!--(((((((((((((((((((((((()))))))))))))))))))))))-->
@@ -473,6 +499,24 @@
   <script src="js/swiper-bundle.min.js"></script>
   <!-- custom -->
   <script src="js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      const modal = $(".modal");
+      const btnOpenModal = $(".modalBtn");
+      const closeModal = $(".closeModal");
+      btnOpenModal.click(function () {
+        modal.fadeIn();
+      });
+      closeModal.click(function () {
+        modal.fadeOut();
+      });
+      $(window).click(function (event) {
+        if (event.target == modal[0]) {
+          modal.fadeOut();
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
